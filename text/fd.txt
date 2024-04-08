@@ -1,0 +1,205 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "serve.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+Microsoft Windows [Version 10.0.22631.3374]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase init
+
+Error: Failed to authenticate, have you run firebase login?
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase logout
+No need to logout, not logged in
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase login
+i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+? Allow Firebase to collect CLI and Emulator Suite usage and error reporting information? Yes
+i  To change your data collection preference at any time, run `firebase logout` and log in again.
+
+Visit this URL on this device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=602951220&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+Waiting for authentication...
+
++  Success! Logged in as subodhingle9689@gmail.com
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\subod\OneDrive\Desktop\own api news
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to
+confirm your choices. (Press <space> to select, <a> to toggle all, <i> to in? Which Firebase features do you want to set up for this directory? Press
+Space to select features, then Enter to confirm your choices.
+
+Error: Must select at least one feature. Use SPACEBAR to select features, or specify a feature by running firebase init [feature_name]
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\subod\OneDrive\Desktop\own api news
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press
+Space to select features, then Enter to confirm your choices. Functions:
+Configure a Cloud Functions directory and its files
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: newapi-f1426
+(newapi)
+i  Using project newapi-f1426 (newapi)
+
+=== Functions Setup
+Let's create a new codebase for your functions.
+A directory corresponding to the codebase will be created in your project
+with sample code pre-configured.
+
+See https://firebase.google.com/docs/functions/organize-functions for
+more information on organizing your functions using codebases.
+
+Functions can be deployed with firebase deploy.
+
+? What language would you like to use to write Cloud Functions? JavaScript
+? Do you want to use ESLint to catch probable bugs and enforce style? No
++  Wrote functions/package.json
++  Wrote functions/index.js
++  Wrote functions/.gitignore
+? Do you want to install dependencies with npm now? No
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+i  Writing gitignore file to .gitignore...
+
++  Firebase initialization complete!
+
+C:\Users\subod\OneDrive\Desktop\own api news>npm i firebase-functions
+npm notice Beginning October 4, 2021, all connections to the npm registry - including for package installation - must use TLS 1.2 or higher. You are currently using plaintext http to connect. Please visit the GitHub blog for more information: https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/
+npm notice Beginning October 4, 2021, all connections to the npm registry - including for package installation - must use TLS 1.2 or higher. You are currently using plaintext http to connect. Please visit the GitHub blog for more information: https://github.blog/2021-08-23-npm-registry-deprecating-tls-1-0-tls-1-1/
+
+added 110 packages in 21s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+C:\Users\subod\OneDrive\Desktop\own api news>npm run deploy
+
+> news-app-backend@1.0.0 deploy
+> firebase deploy --only functions api
+
+
+C:\Users\subod\OneDrive\Desktop\own api news>npm run deploy
+
+> news-app-backend@1.0.0 deploy
+> firebase deploy --only functions api
+
+
+Having trouble? Try firebase [command] --help
+
+C:\Users\subod\OneDrive\Desktop\own api news>$ firebase deploy
+'$' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\subod\OneDrive\Desktop\own api news>$run firebase deploy
+'$run' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\subod\OneDrive\Desktop\own api news>$run firebase deploy
+'$run' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\subod\OneDrive\Desktop\own api news>$ firebase init
+'$' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\subod\OneDrive\Desktop\own api news>npm run deploy
+
+> news-app-backend@1.0.0 deploy
+> firebase deploy --only functions api
+
+
+C:\Users\subod\OneDrive\Desktop\own api news>npm run deploy
+
+> news-app-backend@1.0.0 deploy
+> firebase deploy --only functions api
+
+
+Having trouble? Try firebase [command] --help
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase deploy --only functions
+
+=== Deploying to 'newapi-f1426'...
+
+i  deploying functions
+i  functions: preparing codebase default for deployment
+i  functions: ensuring required API cloudfunctions.googleapis.com is enabled...
+i  functions: ensuring required API cloudbuild.googleapis.com is enabled...
+i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled...
+!  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now...
++  functions: required API cloudfunctions.googleapis.com is enabled
+!  functions: missing required API cloudbuild.googleapis.com. Enabling now...
+
+Error: Your project newapi-f1426 must be on the Blaze (pay-as-you-go) plan to complete this command. Required API artifactregistry.googleapis.com can't be enabled until the upgrade is complete. To upgrade, visit the following URL:
+
+https://console.firebase.google.com/project/newapi-f1426/usage/details
+
+C:\Users\subod\OneDrive\Desktop\own api news>firebase deploy --only functions
+
+=== Deploying to 'newapi-f1426'...
+
+i  deploying functions
+i  functions: preparing codebase default for deployment
+i  functions: ensuring required API cloudfunctions.googleapis.com is enabled...
+i  functions: ensuring required API cloudbuild.googleapis.com is enabled...
+i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled...
+!  functions: missing required API cloudbuild.googleapis.com. Enabling now...
++  functions: required API cloudfunctions.googleapis.com is enabled
+!  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now...
+
+Error: Your project newapi-f1426 must be on the Blaze (pay-as-you-go) plan to complete this command. Required API cloudbuild.googleapis.com can't be enabled until the upgrade is complete. To upgrade, visit the following URL:
+
+https://console.firebase.google.com/project/newapi-f1426/usage/details
+
+C:\Users\subod\OneDrive\Desktop\own api news>^A^A
+
